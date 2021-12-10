@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Headers": {
+            "cap-callback-name": null,
+            "cap-msg-id": "1469291889115295744",
+            "cap-corr-id": "1469291889115295744",
+            "cap-corr-seq": "0",
+            "cap-msg-name": "ArticleCreated",
+            "cap-msg-type": "DateTime",
+            "cap-senttime": "12/10/2021 2:04:19 PM \u002B01:00",
+            "cap-msg-group": "cap.queue.poc.cap.subscriber.v1"
+        },
+        "Value": "2021-12-10T14:04:19.1444489+01:00"
+    },
+    {
+        "Headers": {
+            "cap-callback-name": null,
+            "cap-msg-id": "1469301216598573056",
+            "cap-corr-id": "1469301216598573056",
+            "cap-corr-seq": "0",
+            "cap-msg-name": "ArticleCreated",
+            "cap-msg-type": "\u003C\u003Ef__AnonymousType0\u00604",
+            "cap-senttime": "12/10/2021 2:41:22 PM \u002B01:00"
+        },
+        "Value": {
+            "Id": "7b6f06c5-4ef9-45b1-bc61-6bb0e38abdd7",
+            "Number": "random number",
+            "CreatedAt": "2021-12-10T13:41:22.9902266Z",
+            "CreatedBy": "133d7f70-701d-49dc-a9ee-2cc90dbd01fe"
+        }
+    }
+]
