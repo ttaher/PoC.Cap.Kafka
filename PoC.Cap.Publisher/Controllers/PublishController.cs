@@ -19,7 +19,8 @@ namespace PoC.Cap.Publisher.Controllers
         [HttpGet()]
         public IActionResult AdonetWithTransaction()
         {
-            var connectionString = @"YOUR_CONNECTION_STRING";
+            //Don't hardcoded your sensitive information, this is only for PoC
+            var connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=PoC.Cap.Db;Integrated Security=True";
             using (var connection = new SqlConnection(connectionString))
             {
                 using var transaction = connection.BeginTransaction(_capBus, autoCommit: true);
