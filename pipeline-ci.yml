@@ -1,0 +1,22 @@
+
+jobs:
+  - job: BuildAndTest
+    displayName: "Build & Test"
+    variables:
+    steps:
+      - checkout: self
+
+      - task: DotNetCoreCLI@2
+        inputs:
+          displayName: "Restore"
+          command: 'restore'
+          projects: '**/*.csproj'
+          feedsToUse: 'select'
+
+      - task: DotNetCoreCLI@2
+        displayName: Build all the Projects in the solution
+        inputs:
+          command: 'build'
+          projects: '**/*.csproj'
+          arguments: '--configuration release --no-restore'
+      
