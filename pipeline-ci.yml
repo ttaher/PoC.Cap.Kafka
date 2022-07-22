@@ -2,7 +2,8 @@
 jobs:
   - job: BuildAndTest
     displayName: "Build & Test"
-    variables:
+    pool:
+      vmImage: ubuntu-latest
     steps:
       - checkout: self
 
