@@ -1,9 +1,7 @@
-
 jobs:
-  - job: BuildAndTest
-    displayName: "Build & Test"
-    pool:
-      vmImage: ubuntu-latest
+  build:
+
+    runs-on: ubuntu-latest
     steps:
       - checkout: self
 
